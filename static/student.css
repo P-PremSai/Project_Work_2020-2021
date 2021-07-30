@@ -1,0 +1,56 @@
+img{
+    float: left;
+  }
+  #college{
+      text-align: center;
+  }
+  
+  body{
+    background-color: black;
+    background-image: url("admin.jpg");
+    background-size: cover;
+  }
+  select,button{
+      display: inline-block;
+  }
+  div{
+      margin: 0px 10px 0px 10px;
+      text-align: center;
+  }
+  label{
+      margin-right: 5px;
+  }
+
+  #myHeader{
+    color:rgb(255, 0, 0);
+    padding:20px;
+    text-align:center;
+    margin :0px 0 0 0 ;
+}
+
+div.absolute1{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 100px;
+ }
+
+  table {
+     font-family:arial,sans-serif;
+	 width:100%;
+}
+td,th{
+     border:4px solid #dddddd;
+	 text-align:left;
+	 padding:8px;
+}
+
+tr:nth-child(even){
+     background-color:lightgreen;
+}
+tr:nth-child(odd){
+     background-color:lightblue;
+}
+#college{
+    background-color: rgba(173, 216, 230,0.7);
+  }

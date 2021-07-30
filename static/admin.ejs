@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="admin.js"></script>
+
+    <style type="text/css">
+    div.absolute1{
+       position: absolute;
+       top: 20px;
+       right: 10px;
+       width: 100px;
+    }
+    
+    div.absolute3{
+       position: absolute;
+       top: 150px;
+       right: 1px;
+       width: 300px;
+    }
+
+    .btn1{
+        border: 2px solid black;
+	    border-radius: 5px;
+        background-color: #ff704d;
+        color: black;
+        padding: 10px 14px;
+        font-size: 16px;
+        cursor: pointer;
+        }
+    
+        
+    .info {
+        border-color: #2196F3;
+        color: black
+    }
+
+    .info:hover {
+        background: #2196F3;
+        color: white;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div id="college">
+        <img src="bmsce logo.png" width="100" height="100" >
+    
+        <h1>B.M.S COLLEGE OF ENGINEERING</h1>
+          <h3>Autonomous institute, Affiliated to VTU</h3>
+          <h3>Estd.1946</h3>
+          <hr>
+        </div>
+        <div class="absolute1">
+            <a class="btn1 info"  onclick="window.location.href='/auth/adminlogin';">LOGOUT</a>
+        </div>
+        <form class="form-inline" role="form" method="post" action="admin/:email/:password">
+            
+            <div class="form-group">
+                Branch :  <select id="branch" name="branch">
+                    <option value="" style="padding-left:5px">All</option>
+                    <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                    <option value="Information Science">Information Science</option>
+                    <option value="Electronics and communication Enginnering">Electronics and communication Enginnering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Biotechnology">Biotechnology</option>
+                    <option value="Metalurgical Engineering">Metalurgical Engineering</option>
+                  </select>
+            </div>
+            <div class="form-group" >
+                Year :  <select id="year" class="" name="year" >
+                    <option value="">All</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success" id="submit" name="submit">Filter</button>
+            </div>
+        </form>
+        <% var data = items%>
+        <% var data_length = Object.keys(data).length %>
+        <div class="container">
+            <h1 style="text-align: center;">Student Details</h1>
+            <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Sl no</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Student ID</th>
+                    <th>Branch</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <% for(var i=0; i < items.length; i++) { %>
+                        <%let url = "/admstu?id="+items[i].student_id%>
+                        <tr data-href="/admstu?id=2">
+                            <td><%=i+1%></td>
+                          <td><%= items[i].FirstName %></td>
+                          <td><%= items[i].LastName %></td>
+                          <td><%= items[i].Email %></td>
+                          <td><%= items[i].student_id %></td>
+                          <td><%= items[i].branch %></td>
+                        </tr>
+                     <% } %>
+                </tbody>
+            </table>
+        </div>
+        <div class="absolute3">
+        <strong >Number of students Registered : <%=data_length%></strong></div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded",()=>{
+                const rows = document.querySelectorAll("tr[data-href]");
+                console.log(rows.length);
+                rows.forEach(row =>{
+                    row.addEventListener('click',()=>{
+                        window.location.href = row.dataset.href;
+                    });
+                });
+            })
+        </script>
+    </body>   
+</html>
+<!-- row.dataset.href -->

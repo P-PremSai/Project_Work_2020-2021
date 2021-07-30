@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All Details</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+    <div id="college">
+        <img src="bmsce logo.png" width="100" height="100" >
+    
+        <h1>B.M.S COLLEGE OF ENGINEERING</h1>
+          <h3>Autonomous institute, Affiliated to VTU</h3>
+          <h3>Estd.1946</h3>
+          <hr>
+    </div>
+
+
+        <div class="absolute1">
+            <a class="btn btn-success" href="/auth/logout">Log Out </a>
+        </div>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            You have <strong></strong>Registered </strong> successfully
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <h2 id="myHeader">Student Details</h2>
+            <table class="table">
+            <tbody>
+                <tr>
+                    <th>First Name :</th>
+                    <td><%= student[0].FirstName%></td>
+                </tr>
+                <tr>
+                    <th>Last Name :</th>
+                    <td><%=student[0].LastName%></td>
+                </tr>
+                <tr>
+                    <th>Date of Birth :</th>
+                    <td><%=student[0].DOB%></td>
+                </tr>
+                <tr>
+                    <th>Gender :</th>
+                    <td><%=student[0].Gender%></td>
+                </tr>
+                <tr>
+                    <th>Mobile Number :</th>
+                    <td><%=student[0].mobile_no%></td>
+                </tr>
+                <tr>
+                    <th>Email ID :</th>
+                    <td><%=student[0].Email%></td>
+                </tr>
+                <tr>
+                    <th>Blood Group :</th>
+                    <td><%=student[0].blood_group%></td>
+                </tr>
+                <tr>
+                    <th>Nationality :</th>
+                    <td><%=student[0].Nationality%></td>
+                </tr>
+                <tr>
+                    <th>Religion :</th>
+                    <td><%=student[0].Relegion%></td>
+                </tr>
+                <tr>
+                    <th>Category :</th>
+                    <td><%=student[0].Category%></td>
+                </tr>
+                <tr>
+                    <th>Aadhaar Number :</th>
+                    <td><%=student[0].Adhar_no%></td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+        
+            <div class="container">
+                <h2 id="myHeader">Academic Details</h2>
+                <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Mode of Addmission :</th>
+                        <td><%=academic[0].MOA%></td>
+                    </tr>
+                    <tr>
+                        <th>Branch :</th>
+                        <td><%=academic[0].branch%></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="container">
+                <h4 style="text-align: left;">Class 10 :</h4>
+                <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Board :</th>
+                        <td><%=academic[0].c10_BoardName%></td>
+                    </tr>
+                    <tr>
+                        <th>Year of Passing :</th>
+                        <td><%=academic[0].c10_YOP%></td>
+                    </tr>
+                    <tr>
+                        <th>Percentage Obtained :</th>
+                        <td><%=academic[0].c10_perecentage%></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+ 
+            <div class="container">
+                <h4 style="text-align: left;">Class 12 :</h4>
+                <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Board :</th>
+                        <td><%=academic[0].c12_BoardName%></td>
+                    </tr>
+                    <tr>
+                        <th>Year of Passing :</th>
+                        <td><%=academic[0].c12_YOP%></td>
+                    </tr>
+                    <tr>
+                        <th>Percentage Obtained :</th>
+                        <td><%=academic[0].c12_perecentage%></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="container">
+                <h2 id="myHeader">Family Particulars</h2>
+                <h4 style="text-align: left;">Father :</h4>
+                <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Name :</th>
+                        <td><%=father[0].Name_ %></td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth :</th>
+                        <td><%=father[0].DOB%></td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <th>Qualification :</th>
+                    <td><%=father[0].Qualification%></td>
+                </tr>
+                <tr>
+                    <th>Occupation :</th>
+                    <td><%=father[0].Occupation%></td>
+                </tr>
+                <tr>
+                    <th>Mobile Number :</th>
+                    <td><%=father[0].mobile_no%></td>
+                </tr>
+                <tr>
+                    <th>Email ID :</th>
+                    <td><%=father[0].Email%></td>
+                </tr>
+            </table>
+            </div>
+
+            <div class="container">
+                <h4 style="text-align: left;">Mother :</h4>
+                <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Name :</th>
+                        <td><%=mother[0].Name_ %></td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth :</th>
+                        <td><%=mother[0].DOB%></td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <th>Qualification :</th>
+                    <td><%=mother[0].Qualification%></td>
+                </tr>
+                <tr>
+                    <th>Occupation :</th>
+                    <td><%=mother[0].Occupation%></td>
+                </tr>
+                <tr>
+                    <th>Mobile Number :</th>
+                    <td><%=mother[0].mobile_no%></td>
+                </tr>
+                <tr>
+                    <th>Email ID :</th>
+                    <td><%=mother[0].Email%></td>
+                </tr>
+            </table>
+            </div>
+
+            <div class="container">
+                <h2 id="myHeader">Address</h2>
+                <h4 style="text-align: left;">Present Address :</h4>
+                <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Lane Address :</th>
+                        <td>5th main road nr colony</td>
+                    </tr>
+                    <tr>
+                        <th>Postal Code :</th>
+                        <td><%=address[0].pres_pincode%></td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <th>City :</th>
+                    <td><%=address[0].pres_district%></td>
+                </tr>
+                <tr>
+                    <th>State :</th>
+                    <td><%=address[0].pres_state%></td>
+                </tr>
+            </table>
+            </div>
+
+            <div class="container">
+                <h4 style="text-align: left;">Permanent Address :</h4>
+                <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Lane Address :</th>
+                        <td>5th main road nr colony</td>
+                    </tr>
+                    <tr>
+                        <th>Postal Code :</th>
+                        <td><%=address[0].per_pincode%></td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <th>City :</th>
+                    <td><%=address[0].per_district%></td>
+                </tr>
+                <tr>
+                    <th>State :</th>
+                    <td><%=address[0].per_state%></td>
+                </tr>
+            </table>
+            </div>
+            <button onclick="window.print()" class="btn btn-primary float-right" style="margin-right: 13%;margin-bottom: 300px;">Print this page</button>
+</body>
+</html>

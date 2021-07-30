@@ -1,0 +1,87 @@
+
+img{
+  float: left;
+}
+form{
+  background-color: #f1f1f1;
+  width: 60%;
+  height: 75%;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 2%;
+}
+div,h1{
+  text-align: center;
+}
+
+.parent{
+  display: inline-block;
+  margin-right: 7%;
+}
+body{
+background-image:url("admin.jpg");
+background-size: cover;
+}
+td{
+  text-align: left;
+  padding: 5px;
+}
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+button:hover {
+  background-color: #2196F3;
+  color: white;
+}
+#check-text{
+  font-size: 140%;
+  margin-bottom: 5px;
+}
+#check{
+  width:20px;
+}
+.next {
+  background-color: #f1f1f1;
+  color: black;
+  margin: 1% 0% 0% 0%;
+}
+.container {
+  border-radius: 5px;
+  background-color: rgba(252, 247, 240,0.5);
+  padding: 20px;
+}
+.lbl {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.inp {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input{
+  width:178px;
+  height:24px;
+  margin-bottom: 15px;
+}
+select{
+  width:182.4px;
+  height:26px;
+  margin-bottom: 15px;
+}
+.addressclass{
+  font-size: 150%;
+}
+#college{
+  background-color: rgba(173, 216, 230,0.7);
+  margin-top: -20px;
+}

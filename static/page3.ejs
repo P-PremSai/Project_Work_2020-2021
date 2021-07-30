@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Family particulers</title>
+    <link rel="stylesheet" href="page3.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="page3.js"></script>
+    <div id="college">
+    <img src="bmsce logo.png" width="100" height="100" >
+      <body>
+    <h1>B.M.S COLLEGE OF ENGINEERING</h1>
+      <h3>Autonomous institute, Affiliated to VTU</h3>
+      <h3>Estd.1946</h3>
+      </body>
+      <hr>
+    </div>
+    <h1>Family particulers</h1>
+    <div >
+      <form id='my-form' name="form" method="POST"  >
+        <table class="parent">
+            <tr><td></td><td><h3>Father</h3> </td></tr>
+            <tr>
+              <td><label for="name">Name</label></td>
+              <td><input type="text" id="fname" name="fname" pattern="^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$"
+                title="Enter valid name" required></input></td>
+            </tr>
+            <tr>
+              <td><label for="date">Date of birth</label></td>
+              <td><input type="date" id="date" name="fdob" value="" required></input></td>
+            </tr>
+            <tr>
+              <td><label for="qual">Qualification</label></td>
+              <td><select class="" name="fqual" required>
+              <option value="">Select</option>
+              <option value="Below Matriculation">Below Matriculation</option>
+              <option value="Graduate">Graduate</option>
+              <option value="Higher Secondary">Higher Secondary</option>
+              <option value="Illiterate">Illiterate</option>
+              <option value="Matriculation">Matriculation</option>
+              <option value="Post Graduate">Post Graduate</option>
+              <option value="Professional">Professional</option>
+              <option value="Other">Other</option>
+            </select></td>
+            </tr>
+            <tr>
+              <td><label for="Occupation">Occupation</label></td>
+              <td><select class="" name="focc" required onchange="CheckOccupationf(this.value)">
+                <option value="">Select</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Business">Business</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Other">Other</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td><label for="foocc"></label></td>
+              <td><input type="text" name="foocc" id="foocc" placeholder="Enter Occupation" style='display:none;'/></td>
+            </tr>
+            <tr>
+              <td><label for="fmobno">Mobile no:</label></td>
+              <td><input type="tel" id="fmobno" name="fmob" pattern="[6-9][0-9]{9}" 
+                title = "Enter valid phone number " required></td>
+            </tr>
+            <tr>
+              <td><label for="fmail">Email:</label></td>
+              <td><input type="Email" id="fmail" name="femail" ></td>
+            </tr>
+        </table>
+            <table class="parent">
+              <tr><td><h3>Mother</h3></td><td> </td></tr>
+              <tr>
+                <td><label for="mname">Name</label></td>
+                <td><input type="text" id="mname" name="mname"  pattern="^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$"
+                  title="Enter valid name" required></input></td>
+              </tr>
+              <tr>
+                <td><label for="date">Date of birth</label></td>
+                <td><input type="date" id="date" name="mdob" value="" required></input></td>
+              </tr>
+              <tr>
+                <td><label for="qual">Qualification</label></td>
+                <td><select class="" name="mqual" required>
+                <option value="">Select</option>
+                <option value="Below Matriculation">Below Matriculation</option>
+                <option value="Graduate">Graduate</option>
+                <option value="Higher Secondary">Higher Secondary</option>
+                <option value="Illiterate">Illiterate</option>
+                <option value="Matriculation">Matriculation</option>
+                <option value="Post Graduate">Post Graduate</option>
+                <option value="Professional">Professional</option>
+                <option value="Other">Other</option>
+              </select></td>
+              </tr>
+              <tr>
+                <td><label for="Occupation">Occupation</label></td>
+                <td><select class="" name="mocc" required  onchange='CheckOccupationm(this.value);'>
+                  <option value="">Select</option>
+                  <option value="Agriculture">Agriculture</option>
+                  <option value="Business">Business</option>
+                  <option value="Doctor">Doctor</option>
+                  <option value="Engineer">Engineer</option>
+                  <option value="House Wife">House Wife</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Other">Other</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td><label for="moocc"></label></td>
+                <td><input type="text" name="moocc" id="moocc" placeholder="Enter Occupation"style='display:none;'/></td>
+              </tr>
+              <tr>
+                <td><label for="mmobno">Mobile no:</label></td>
+                <td><input type="tel" id="mmobno" name="mmob" pattern="[6-9][0-9]{9}"
+                  title="Enter valid phone number" required></td>
+              </tr>
+              <tr>
+                <td><label for="mmail">Email:</label></td>
+                <td><input type="Email" id="mmail" ></td>
+              </tr>
+            </table>
+              <h3 class="addressclass">Present address</h3>
+              <div class="container">
+                <div class="row">
+                  <div class="lbl">
+                    <label for="lane">Lane address</label>
+                  </div>
+                  <div class="inp">
+                    <textarea name="Lane Address" name="prlane" id="lane" rows="4" cols="65" required></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="lbl">
+                    <label for="post">Postal code</label>
+                  </div>
+                  <div class="inp">
+                    <input type="tel" name="prpost" id="post" pattern="[1-9][0-9]{5}"
+                    title="Enter valid postal code" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="lbl">
+                    <label for="city">City</label>
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="prcity" id="city" pattern="^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$"
+                    title="Enter valid city name" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="lbl">
+                    <label for="state">State</label>
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="prstate" id="state" pattern="^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$"
+                    title="Enter valid state name" required>
+                  </div>
+                </div>
+              </div>
+              <h3 class="addressclass" >Permanent address</h3>
+              <input type="checkbox" id="check" onclick="AddressFill()"> <span id="check-text">same as present address</span> </input><br>
+              <div class="container">
+                <div class="row">
+                  <div class="lbl">
+                    <label for="pelane">Lane address</label>
+                  </div>
+                  <div class="inp">
+                    <textarea name="Lane Address" name="pelane" id="pelane" rows="4" cols="65" required></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="lbl">
+                    <label for="pepost">Postal code</label>
+                  </div>
+                  <div class="inp">
+                    <input type="tel" id="pepost" name="pepost" pattern="[1-9][0-9]{5}"
+                    title="Enter valid postal code" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="lbl">
+                    <label for="pecity">City</label>
+                  </div>
+                  <div class="inp">
+                    <input type="text" id="pecity" name = "pecity" pattern="^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$"
+                    title="Enter valid city name" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="lbl">
+                    <label for="pestate">State</label>
+                  </div>
+                  <div class="inp">
+                    <input type="text" id="pestate" name="pestate" pattern="^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$"
+                    title="Enter valid state name" required>
+                  </div>
+                </div>
+              </div>
+              <!-- <input type="submit" class='next' > -->
+              <button type="submit" class="next">Submit</button>
+      </form>
+    </div>
+    <div class="">
+      <!-- <button type="submit" id='my-form' class='next' onclick="SubmitButton()">Submit</button> -->
+    </div>
+    <div class="">
+      <pre>
+
+
+
+
+
+      </pre>
+    </div>
+  </body>
+</html>

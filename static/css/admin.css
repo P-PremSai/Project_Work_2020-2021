@@ -1,0 +1,23 @@
+img{
+    float: left;
+  }
+  #college{
+      text-align: center;
+  }
+  
+  body{
+    background-color: black;
+    background-image: url("background-image.jpg");
+  }
+  select,button{
+      display: inline-block;
+  }
+  div{
+      margin: 0px 10px 0px 10px;
+  }
+  label{
+      margin-right: 5px;
+  }
+  table{
+    background-color: #E7E9EB;
+  }

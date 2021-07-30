@@ -1,0 +1,66 @@
+form{
+  background-color: #f1f1f1;
+  width: 40%;
+  height: 75%;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 2%;
+}
+img{
+  float: left;
+}
+label{
+  display:inline-grid;
+  padding: 2% 1%;
+}
+div{
+  text-align: center;
+}
+pre{
+
+}
+
+body{
+background-image:url("background-image.jpg");
+}
+#next{
+color: blue;
+font-size: 198%;
+padding: 0% 0% 0% 35%;
+margin-bottom: 3%
+display: inline-block;
+text-decoration: none;
+}
+#main{
+  text-align: center;
+}
+
+table{
+
+}
+.ifield{
+  text-align: left;
+  width: 60%;
+  padding:5px 10px 5px 30px ;
+}
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+button:hover {
+  background-color: #2196F3;
+  color: white;
+}
+.next {
+  background-color: #f1f1f1;
+  color: black;
+  margin: 1% 0% 0% 38%;
+}
+td{
+  text-align: left;
+}
+input,select{
+  margin-bottom: 10px;
+}

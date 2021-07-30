@@ -1,0 +1,77 @@
+img {
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+button:hover{
+opacity:0.8;
+}
+.container{
+padding:25px;
+text-align:center;
+
+}
+input[type=text],input[type=password]
+{
+width:25%;
+margin:8px 0;
+padding:12px 20px;
+box-sizing:border-box;
+display:inline-block;
+border:3px  solid black;
+
+}
+#college{
+  background-color: rgba(173, 216, 230,0.7);
+}
+body{
+background-image:url("admin.jpg");
+background-size: cover;
+}
+boader1{
+    box-sizing:border-box;
+    width:400px;
+    height:1200px;
+    padding:30px;
+    border:3px solid #00BFFF;
+}
+div.absolute1{
+   position: absolute;
+   top: 380px;
+   right: 100px;
+   width: 500px;
+}
+div.absolute2{
+   position: absolute;
+   top: 20px;
+   right: 10px;
+   width: 100px;
+}
+.btn1{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color:#f1f1f1;
+    color: black;
+    padding: 10px 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn2{
+    border: 2px solid white;
+  border-radius: 5px;
+  background-color:#f1f1f1;
+  color:blue;
+    padding: 10px 14px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.info {
+  border-color: white;
+  color: blue;
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}

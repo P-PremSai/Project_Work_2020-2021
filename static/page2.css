@@ -1,0 +1,62 @@
+form{
+  background-color: #f1f1f1;
+  width: 40%;
+  height: 75%;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 2%;
+}
+img{
+  float: left;
+}
+
+div,h1{
+  text-align: center;
+}
+body{
+background-image:url("admin.jpg");
+background-size: cover;
+}
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+button:hover {
+  background-color: #2196F3;
+  color: white;
+}
+.next {
+  background-color: #f1f1f1;
+  color: black;
+  margin: 1% 0% 0% 69%;
+}
+.modeA{
+  font-size: 120%;
+  padding-bottom: 5px;
+  margin-left: -75%;
+}
+.mode-radio{
+  margin-left: -39%;
+  padding-bottom: 20px;
+}
+td{
+  padding: 1%;
+  text-align: left;
+  padding-right:2%;
+}
+.input{
+  width:178px;
+  height: 24px;
+  margin-bottom: 15px;
+}
+select{
+  width:182.4px;
+  height: 26px;
+  margin-bottom: 15px;
+}
+#college{
+  background-color: rgba(173, 216, 230,0.7);
+  margin-top: -20px;
+}

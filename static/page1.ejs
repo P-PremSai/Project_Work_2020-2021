@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student personnel details</title>
+    <link rel="stylesheet" href="page1.css">
+    <script defer type="text/javascript" src="page1.js"></script>
+
+  <body>
+    
+    </script>
+    <div id="college">
+    <img src="bmsce logo.png" width="100" height="100" >
+      <h1>B.M.S COLLEGE OF ENGINEERING</h1>
+      <h3>Autonomous institute, Affiliated to VTU</h3>
+      <h3>Estd.1946</h3>
+      <hr>
+    </div>
+    <h1 id="main">Student Personnel Details</h1>
+    <div class="container">
+    <form id="form" action="/page1"  method="POST"><!--class="" action="index.html"  metion="thod="post"-->
+      <table>
+
+      <tr><td class="ifield"><label for="sfname">First Name:</label></td>
+      <td><input type="text" id="sfname" name="fname" style="width:178px;height:24px;" pattern="^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$"
+        title="Enter valid name" required></input></td></tr>
+
+      <tr><td class="ifield"><label for="slname" >Last Name:</label></td>
+      <td><input type="text" id="slname" name="lname" style="width:178px;height:24px;" pattern="^[a-zA-Z]+(?:[\s-][a-zA-Z]+)*$"
+        title="Enter valid name" required></input></td></tr>
+
+      <tr><td class="ifield"><label for="dob" >Date of Birth:</label></td>
+      <td><input type="date" id="dob" name="dob" style="width:178px;height:24px; " required></input></td></tr>
+
+        <tr><td class="ifield"><label for="gender">Gender:</label></td>
+        <td><select id="gender" class="" name="gen" style="width:182.4px;height:26px;" required>
+        <option value ="">Select</option>
+        <option value ="Male">Male</option>
+        <option value ="Female">Female</option>
+        <option value ="Others">Others</option>
+        </select>
+        </td></tr>
+      <tr><td class="ifield"><label for="mobile" >Mobile Number:</label></td>
+      <td><input type="tel"id="mobile" name="number" style="width:178px;height:24px;" pattern="[6-9][0-9]{9}"
+        title="Mobile number must be 10 characters long with no special symbols" required></td></tr>  
+      <tr><td class="ifield"><label for="email" >Email ID:</label></td>
+      <td><input type="email" id="email" name="email" style="width:178px;height:24px;" onchange="EmailCheck(this.value)" required></td></tr>
+      <tr><td class="ifield"><label for="blood" >Blood Group:</label></td>
+      <td><select for="blood"  name="blo" style="width:182.4px;height:26px;" required>
+        <option value="">Select</option>
+        <option value="o+">o+</option>
+        <option value="o-">o-</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select></td><tr>
+      <tr><td class="ifield"><label for="country" >Nationality:</label></td>
+      <td><select id="country" name="contry" style="width:182.4px;height:26px;" required>
+        <option value="">Select</option>
+        <option value="Indian">Indian</option>
+        <option value="Non-Indian">Non-Indian</option>
+      </select></td></tr>
+      <tr><td class="ifield"><label for="religion">Religion:</label></td>
+      <td><select id="religion" name="releg" style="width:182.4px;height:26px;" required>
+        <option value="">Select</option>
+        <option value="Buddhism">Buddhism</option>
+        <option value="Christianity">Christianity</option>
+        <option value="Hinduism" >Hinduism</option>
+        <option value="Islam">Islam</option>
+        <option value="Jainism">Jainism</option>
+        <option value="Sikhism">Sikhism</option>
+        <option value="Other">Other</option>
+      </select></td></tr>
+      <tr><td class="ifield" name=""><label for="category">Category:</label></td>
+      <td><select id="category" name="cate" style="width:182.4px;height:26px;" required>
+        <option value="">Select</option>
+        <option value="GEN">GEN</option>
+        <option value="OBC">OBC</option>
+        <option value="SC">SC</option>
+        <option value="ST">ST</option>
+        <option value="Other">Other</option>
+      </select></td></tr>
+      <tr><td class="ifield"><label for="adhar">Aadhar No.:</label></td>
+      <td><input type="tel" id="adhar" name="adhar" style="width:178px;height:24px;" pattern="[0-9]{12}"
+        title="Adhar number must be 12 characters long with no special symbol" required></input></td></tr>
+      </table>
+      <button type="submit" class="next" id='form'>Next&raquo;</button>
+    <!-- <input type="submit" class="next"> -->
+    </form><br>
+  </div>
+  <pre>
+
+
+  </pre>
+  </body>
+</html>
